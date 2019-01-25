@@ -26,6 +26,10 @@ print (watermelon.format ("Арбуз"))
 # Подсказка: воспользоваться методом .format()
 # с помощью числа определяем ширину поля слева
 
+list1 = ["cow","dog","cat","pig","duck"]
+list2 = ["wolf","bear","fox","hare","pig"]
+result=list(set(list1) - set(list2))
+print (result)
 
 # Задача-2:
 # Даны два произвольные списка.
@@ -35,3 +39,15 @@ print (watermelon.format ("Арбуз"))
 # Дан произвольный список из целых чисел.
 # Получите НОВЫЙ список из элементов исходного, выполнив следующие условия:
 # если элемент кратен двум, то разделить его на 4, если не кратен, то умножить на два.
+
+list3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+newlist = list3
+i=0
+for el in newlist:
+    el= float (el)
+    if el % 2 == 0:
+        newlist [i] = el/4
+    else: newlist [i] = el*2
+    i += 1
+print(newlist)
+    
